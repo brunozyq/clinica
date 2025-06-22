@@ -9,7 +9,7 @@
         <div class="alert alert-success">{{ session('sucesso') }}</div>
     @endif
 
-    <table class="table table-bordered">
+    <table class="table-container">
         <thead>
             <tr>
                 <th>ID</th>
@@ -23,12 +23,12 @@
                     <td>{{ $especialidade->id }}</td>
                     <td>{{ $especialidade->nome }}</td>
                     <td>
-                        <a href="{{ route('admin.especialidades.edit', $especialidade->id) }}" class="btn btn-sm btn-warning">Editar</a>
+                        <a href="{{ route('admin.especialidades.edit', $especialidade->id) }}" class="btn btn-primary btn-sm">Editar</a>
                         
                         <form action="{{ route('admin.especialidades.destroy', $especialidade->id) }}" method="POST" style="display:inline-block" onsubmit="return confirm('Confirma exclusão?')">
                             @csrf
                             @method('DELETE')
-                            <button class="btn btn-sm btn-danger">Excluir</button>
+                            <button class="btn-cancelar">Excluir</button>
                         </form>
                     </td>
                 </tr>

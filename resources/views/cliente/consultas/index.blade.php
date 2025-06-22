@@ -18,7 +18,7 @@
     @if($consultas->isEmpty())
         <p>Você não possui consultas marcadas.</p>
     @else
-        <table class="table table-bordered">
+        <table class="table-container">
             <thead>
                 <tr>
                     <th>ID</th>
@@ -36,14 +36,14 @@
                             {{ $consulta->medico->usuario->nome ?? 'Não disponível' }}
                         </td>
                         <td>
-                            <a href="{{ route('cliente.consultas.edit', $consulta->id) }}" class="btn btn-sm btn-warning">
+                            <a href="{{ route('cliente.consultas.edit', $consulta->id) }}" class="btn btn-primary btn-sm">
                                 Editar
                             </a>
                             <form action="{{ route('cliente.consultas.destroy', $consulta->id) }}" method="POST" style="display:inline-block;">
                                 @csrf
                                 @method('DELETE')
                                 <button type="submit"
-                                        class="btn btn-sm btn-danger"
+                                        class="btn-cancelar"
                                         onclick="return confirm('Tem certeza que deseja cancelar essa consulta?')">
                                     Cancelar
                                 </button>

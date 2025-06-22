@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <h1>Lista de Consultas (Admin)</h1>
-    <a href="{{ route('admin.consultas.create') }}" class="btn btn-success mb-3">Agendar Nova Consulta</a>
+    <a href="{{ route('admin.consultas.create') }}" class="btn btn-primary mb-3">Agendar Nova Consulta</a>
 
     @if(session('sucesso'))
         <div class="alert alert-success">
@@ -11,7 +11,7 @@
         </div>
     @endif
 
-    <table class="table table-bordered">
+    <table class="table-container">
         <thead>
             <tr>
                 <th>ID</th>
@@ -35,7 +35,7 @@
                     <form action="{{ route('admin.consultas.destroy', $consulta->id) }}" method="POST" style="display:inline-block;">
                         @csrf
                         @method('DELETE')
-                        <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Confirmar cancelamento da consulta?')">Cancelar</button>
+                        <button type="submit" class="btn-cancelar" onclick="return confirm('Confirmar cancelamento da consulta?')">Cancelar</button>
                     </form>
                 </td>
             </tr>

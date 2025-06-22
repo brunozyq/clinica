@@ -18,7 +18,7 @@
         @csrf
 
         <!-- Campo: Cliente -->
-        <div class="form-group">
+        <div class="input-cad">
             <label for="cliente_id">Selecione o Cliente:</label>
             <select name="cliente_id" id="cliente_id" class="form-control">
                 <option value="">Selecione um cliente</option>
@@ -29,7 +29,7 @@
         </div>
 
         <!-- Campo: Especialidade -->
-        <div class="form-group">
+        <div class="input-cad">
     <label for="especialidade">Selecione a Especialidade:</label>
     <select name="especialidade" id="especialidade" class="form-control">
         <option value="">Selecione uma especialidade</option>
@@ -40,7 +40,7 @@
 </div>
 
         <!-- Campo: Médico (será populado via JavaScript) -->
-        <div class="form-group">
+        <div class="input-cad">
             <label for="medico">Selecione o Médico:</label>
             <select name="medico_id" id="medico" class="form-control">
                 <option value="">Selecione um médico</option>
@@ -48,12 +48,12 @@
         </div>
 
         <!-- Campo: Data e Hora -->
-        <div class="form-group">
+        <div class="input-cad">
             <label for="data_hora">Data e Hora:</label>
             <input type="datetime-local" name="data_hora" id="data_hora" class="form-control">
         </div>
 
-        <button type="submit" class="btn btn-primary mt-3">Agendar Consulta</button>
+        <button type="submit" class="btn-cad">Agendar Consulta</button>
     </form>
 </div>
 

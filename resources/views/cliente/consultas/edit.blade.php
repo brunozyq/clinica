@@ -19,7 +19,7 @@
         @method('PUT')
 
         <!-- Seleção de Médico -->
-        <div class="form-group">
+        <div class="input-cad">
             <label for="medico_id">Médico</label>
             <select name="medico_id" id="medico_id" class="form-control" required>
                 <option value="">Selecione um médico</option>
@@ -32,13 +32,13 @@
         </div>
 
         <!-- Data e Hora -->
-        <div class="form-group">
+        <div class="input-cad">
             <label for="data_hora">Data e Hora</label>
             <input type="datetime-local" name="data_hora" id="data_hora" class="form-control" 
                    value="{{ date('Y-m-d\TH:i', strtotime($consulta->data_hora)) }}" required>
         </div>
 
-        <button type="submit" class="btn btn-primary mt-3">Atualizar Consulta</button>
+        <button type="submit" class="btn-cad">Atualizar Consulta</button>
     </form>
 </div>
 @endsection

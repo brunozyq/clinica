@@ -6,7 +6,7 @@
     
     <!-- Formulário para filtrar por ordem -->
     <form method="GET" action="{{ route('medico.consultas.index') }}">
-        <div class="form-group">
+        <div class="input-cad">
             <label for="ordem">Ordenar por:</label>
             <select name="ordem" id="ordem" class="form-control">
                 <option value="mais_proxima" {{ (!request('ordem') || request('ordem') != 'mais_distante') ? 'selected' : '' }}>
@@ -23,7 +23,7 @@
     @if($consultas->isEmpty())
         <p class="mt-3">Você não possui consultas agendadas.</p>
     @else
-        <table class="table table-bordered mt-3">
+        <table class="table-container">
             <thead class="thead-light">
                 <tr>
                     <th>ID</th>

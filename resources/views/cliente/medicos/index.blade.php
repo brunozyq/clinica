@@ -6,7 +6,7 @@
 
     <!-- Formulário para filtrar por especialidade -->
     <form method="GET" action="{{ route('cliente.medicos.filtrar') }}">
-        <div class="form-group">
+        <div class="input-cad">
             <label for="especialidade_id">Filtrar por Especialidade:</label>
             <select name="especialidade_id" id="especialidade_id" class="form-control">
     <option value="">Todas as Especialidades</option>

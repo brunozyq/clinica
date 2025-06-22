@@ -5,7 +5,6 @@
     <title>@yield('title', 'Clínica Cisne')</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Adicione seu CSS aqui -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         :root {
@@ -24,6 +23,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             transition: background-color 0.3s ease;
+
         }
         
         .container {
@@ -94,22 +94,28 @@
         }
         
         nav ul {
-            display: flex;
-            list-style: none;
-            padding: 0;
-        }
-        
+        display: flex;
+        align-items: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
         nav ul li {
-            margin-left: 20px;
-            position: relative;
-        }
-        
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+    }
+
         nav ul li a {
-            color: var(--text-color);
-            font-weight: 500;
-            padding: 8px 0;
-            position: relative;
-        }
+        display: inline-block;
+        color: var(--text-color);
+        font-weight: 500;
+        padding: 8px 12px;
+        text-decoration: none;
+        position: relative;
+        transition: color 0.3s ease;
+    }
         
         nav ul li a::after {
             content: '';
@@ -402,6 +408,188 @@
             transform: translateY(-2px);
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
+
+        .btn-cancelar{
+            background-color: red;
+            opacity: 90%;
+            color: var(--text-color);
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+         .btn-cancelar:hover{
+            opacity: 70%;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+         }   
+        
+         .table-container {
+            width: 80%; /* Largura da tabela */
+            margin: 20px auto; /* Centraliza a tabela */
+            border-radius: 8px; /* Cantos arredondados */
+            overflow: hidden; /* Para bordas arredondadas */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra da tabela */
+            background-color: transparent; /* Fundo da tabela */
+            }
+            table {
+                width: 100%; /* Ocupa toda a largura */
+                border-collapse: collapse; /* Remove espaçamentos entre as células */
+            }
+            th, td {
+                padding: 12px; /* Espaçamento interno */
+                text-align: left; /* Alinhamento à esquerda */
+            }
+            th {
+                background-color: #00b4d8; /* Cabeçalho azul */
+                color: white; /* Texto branco no cabeçalho */
+            }
+            tr:hover {
+                background-color: #3a3a3a; /* Realce na linha ao passar o mouse */
+            }
+
+            .tit-cad{
+                font-size: 2.5rem;
+                margin-bottom: 1.5rem;
+                color: var(--highlight-color);
+                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+            }
+
+            /* Containers dos inputs */
+            .input-cad {
+                margin-bottom: 20px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            /* Labels */
+            .form-label {
+                margin-bottom: 8px;
+                color: #00b4d8;
+                font-weight: 600;
+            }
+
+            /* Campos de texto e senha */
+            .form-control {
+                padding: 10px 15px;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                font-size: 16px;
+                transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            /* Selects */
+            .form-select {
+                padding: 10px 15px;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                font-size: 16px;
+                transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            /* Efeito ao focar nos inputs e selects */
+            .form-control:focus,
+            .form-select:focus {
+                outline: none;
+                border-color: #007bff;
+                box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+            }
+
+            /* Multiselect */
+            .form-select[multiple] {
+                min-height: 120px;
+                height: auto;
+            }
+
+            /* Botão */
+            .btn-cad {
+                background-color: #00b4d8;
+                color: #fff;
+                border: none;
+                padding: 12px 20px;
+                border-radius: 8px;
+                cursor: pointer;
+                font-size: 16px;
+                transition: background-color 0.3s ease;
+                width: 100%;
+            }
+
+            /* Hover no botão */
+            .btn-cad:hover {
+                background-color: #00b4d8;
+                opacity: 80%;
+            }
+
+            /* Layout dos cards */
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                justify-content: center;
+            }
+
+            /* Cada coluna */
+            .col-md-4 {
+                flex: 1 1 300px;
+                max-width: 350px;
+            }
+
+            /* Card */
+            .card {
+                background-color: transparent;
+                border-radius: 12px;
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            /* Efeito hover no card */
+            .card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            }
+
+            /* Conteúdo interno */
+            .card-body {
+                padding: 20px;
+            }
+
+            /* Título */
+            .card-title {
+                font-size: 20px;
+                color: #00b4d8;
+                margin-bottom: 10px;
+                font-weight: 700;
+            }
+
+            /* Texto */
+            .card-text {
+                color: white;
+                margin-bottom: 15px;
+                font-size: 15px;
+                line-height: 1.4;
+            }
+
+            /* Botão */
+            .btn {
+                display: inline-block;
+                text-decoration: none;
+                background-color: #00b4d8;
+                color: #fff;
+                padding: 10px 18px;
+                border-radius: 8px;
+                font-size: 15px;
+                transition: background-color 0.3s ease;
+                text-align: center;
+            }
+
+            /* Hover botão */
+            .btn:hover {
+                background-color: #00b4d8;
+                opacity: 80%;
+                color: white
+            }
     </style>
 </head>
 <body>

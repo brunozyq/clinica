@@ -3,7 +3,16 @@
 @section('content')
 
 <style>
-    .container h1 {
+
+  #container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+  .container h1 {
   color: var(--highlight-color);
   font-weight: 700;
   text-align: center;
@@ -16,6 +25,7 @@
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
+  margin-top: 50px
 }
 
 .col-md-4 {
@@ -46,26 +56,26 @@
 }
 
 .btn-success {
-  background-color: #28a745;
+  background-color: var(--accent-color);
   color: var(--text-color);
   border: none;
 }
 
 .btn-success:hover {
-  background-color: #218838;
-  box-shadow: 0 8px 20px rgba(40, 167, 69, 0.7);
+  background-color: #0096c7;
+  box-shadow: 0 8px 20px rgba(0, 180, 216, 0.7);
   transform: translateY(-3px);
 }
 
 .btn-info {
-  background-color: #17a2b8;
+  background-color: var(--accent-color);
   color: var(--text-color);
   border: none;
 }
 
 .btn-info:hover {
-  background-color: #138496;
-  box-shadow: 0 8px 20px rgba(23, 162, 184, 0.7);
+  background-color: #0096c7;
+  box-shadow: 0 8px 20px rgba(0, 180, 216, 0.7);
   transform: translateY(-3px);
 }
 
@@ -82,7 +92,7 @@
   }
 }
 </style>
-<div class="container">
+<div class="container" id="container">
     <h1 class="mb-4">Painel Administrativo</h1>
     <div class="row">
         <div class="col-md-4">

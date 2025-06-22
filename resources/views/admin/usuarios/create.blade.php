@@ -2,22 +2,22 @@
 
 @section('content')
 <div class="container">
-    <h2 class="mb-4">Cadastrar Novo Usuário</h2>
+    <h2 class="tit-cad">Cadastrar Novo Usuário</h2>
 
     <form action="{{ route('admin.usuarios.store') }}" method="POST">
         @csrf
 
-        <div class="mb-3">
+        <div class="input-cad">
             <label for="nome" class="form-label">Nome</label>
             <input type="text" name="nome" class="form-control" required>
         </div>
 
-        <div class="mb-3">
+        <div class="input-cad">
             <label for="email" class="form-label">E-mail</label>
             <input type="email" name="email" class="form-control" required>
         </div>
 
-        <div class="mb-3">
+        <div class="input-cad">
             <label for="tipo" class="form-label">Tipo</label>
             <select name="tipo" id="tipo" class="form-select" required>
                 <option value="admin">Administrador</option>
@@ -27,13 +27,13 @@
         </div>
 
         {{-- Campo CRM (inicialmente escondido) --}}
-        <div class="mb-3" id="crm-container" style="display:none;">
+        <div class="input-cad" id="crm-container" style="display:none;">
             <label for="crm" class="form-label">CRM</label>
             <input type="text" name="crm" id="crm" class="form-control">
         </div>
 
         {{-- Campo de especialidades (inicialmente escondido) --}}
-        <div class="mb-3" id="especialidades-container" style="display:none;">
+        <div class="input-cad" id="especialidades-container" style="display:none;">
             <label for="especialidades" class="form-label">Especialidades</label>
             <select name="especialidades[]" id="especialidades" class="form-select" multiple>
                 @foreach($especialidades as $especialidade)
@@ -42,17 +42,17 @@
             </select>
         </div>
 
-        <div class="mb-3">
+        <div class="input-cad">
             <label for="senha" class="form-label">Senha</label>
             <input type="password" name="senha" class="form-control" required>
         </div>
 
-        <div class="mb-3">
+        <div class="input-cad">
             <label for="senha_confirmation" class="form-label">Confirme a Senha</label>
             <input type="password" name="senha_confirmation" class="form-control" required>
         </div>
 
-        <button class="btn btn-success">Salvar</button>
+        <button class="btn-cad">Salvar</button>
     </form>
 </div>
 

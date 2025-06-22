@@ -7,7 +7,7 @@
         @csrf
 
         <!-- Campo para selecionar a Especialidade -->
-        <div class="form-group">
+        <div class="input-cad">
             <label for="especialidade_id">Especialidade</label>
             <select name="especialidade_id" id="especialidade_id" class="form-control">
                 <option value="">Selecione uma especialidade</option>
@@ -18,7 +18,7 @@
         </div>
 
         <!-- Campo para selecionar o Médico -->
-        <div class="form-group">
+        <div class="input-cad">
             <label for="medico_id">Médico</label>
             <select name="medico_id" id="medico_id" class="form-control">
                 <option value="">Selecione um médico</option>
@@ -36,12 +36,12 @@
         </div>
 
         <!-- Campo para data e hora -->
-        <div class="form-group">
+        <div class="input-cad">
             <label for="data_hora">Data e Hora</label>
             <input type="datetime-local" name="data_hora" id="data_hora" class="form-control" required>
         </div>
 
-        <button type="submit" class="btn btn-primary mt-3">Agendar Consulta</button>
+        <button type="submit" class="btn-cad">Agendar Consulta</button>
     </form>
 </div>
 @endsection

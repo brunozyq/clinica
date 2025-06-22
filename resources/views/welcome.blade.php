@@ -15,7 +15,7 @@
             @endguest
         </div>
         <div class="hero-image fade-in">
-            <img src="https://sdmntpreastus.oaiusercontent.com/files/00000000-3158-61f9-9f53-058a152bc783/raw?se=2025-05-19T05%3A28%3A52Z&sp=r&sv=2024-08-04&sr=b&scid=00000000-0000-0000-0000-000000000000&skoid=04233560-0ad7-493e-8bf0-1347c317d021&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-05-18T23%3A31%3A30Z&ske=2025-05-19T23%3A31%3A30Z&sks=b&skv=2024-08-04&sig=79pm%2BPkAJQFuTTX8Hiq8XtHw8KFtGZmbru7VhhrvEIU%3D" alt="Doutora na Clínica Cisne" />
+            <img src="{{ asset('images/medica.png') }}" alt="Doutora na Clínica Cisne" />
         </div>
     </div>
 </div>
