@@ -2,19 +2,19 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>@yield('title', 'Clínica Cisne')</title>
+    <title>@yield('title', 'Agende Bem')</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Adicione seu CSS aqui -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         :root {
-            --primary-color: #000000;
-            --secondary-color: #0a0a0a;
+            --primary-color: #fffafa;
+            --secondary-color: #fffafa;
             --accent-color: #00b4d8;
-            --text-color: #e1e1e6;
+            --text-color: #000000;
             --highlight-color: #00b4d8;
-            --gradient-primary: linear-gradient(135deg, #000000 0%, #0a0a0a 100%);
-            --gradient-secondary: linear-gradient(135deg, #0a0a0a 0%, #000000 100%);
+            --gradient-primary: linear-gradient(135deg, #fffafa 0%, #fffafa 100%);
+            --gradient-secondary: linear-gradient(135deg, #fffafa 0%, #fffafa 100%);
         }
         
         body {
@@ -51,7 +51,7 @@
             border-radius: 5px;
             transition: all 0.3s ease;
             font-weight: 500;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 5px #e1e1e6;
         }
         
         .btn-custom:hover {
@@ -65,12 +65,12 @@
         }
         
         header {
-            background: var(--gradient-primary);
+            background: #e1e1e6;
             padding: 1rem 0;
             position: sticky;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 10px #e1e1e6;
         }
         
         .header-container {
@@ -170,7 +170,7 @@
         }
         
         footer {
-            background: var(--gradient-secondary);
+            background: #e1e1e6;
             padding: 1.5rem 0;
             text-align: center;
             transition: all 0.3s ease;
@@ -238,8 +238,8 @@
             animation: slideIn 1s ease;
             padding: 30px;
             border-radius: 10px;
-            background-color: rgba(10, 10, 10, 0.5);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            background-color: #e1e1e6;
+            box-shadow: 0 5px 15px #e1e1e6;
         }
         
         @keyframes slideIn {
@@ -251,7 +251,7 @@
             font-size: 2.5rem;
             margin-bottom: 1.5rem;
             color: var(--highlight-color);
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+            text-shadow: 1px 1px 2px #e1e1e6;
         }
         
         .fade-in {
@@ -267,18 +267,18 @@
         }
         
         .feature-card {
-            background-color: rgba(10, 10, 10, 0.5);
+            background-color: #e1e1e6;
             border-radius: 10px;
             padding: 20px;
             width: 250px;
             text-align: center;
             transition: all 0.3s ease;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 5px 15px #e1e1e6;
         }
         
         .feature-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 10px 20px #e1e1e6;
         }
         
         .feature-card i {
@@ -322,7 +322,7 @@
         .hero-image img {
             max-width: 80%;
             border-radius: 10px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 10px 30px #fffafa;
             transition: transform 0.3s ease;
         }
         
@@ -364,7 +364,7 @@
         }
         
         .contact-section {
-            background-color: rgba(10, 10, 10, 0.3);
+            background-color: #e1e1e6;
             padding: 40px;
             border-radius: 10px;
             margin: 40px 0;
@@ -400,7 +400,7 @@
             border-radius: 5px;
             transition: all 0.3s ease;
             font-weight: 500;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 5px #e1e1e6;
         }
         
         .btn-primary:hover {
@@ -418,12 +418,12 @@
             border-radius: 5px;
             transition: all 0.3s ease;
             font-weight: 500;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 5px #e1e1e6;
         }
          .btn-cancelar:hover{
             opacity: 70%;
             transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 8px #e1e1e6;
          }   
         
          .table-container {
@@ -431,7 +431,7 @@
             margin: 20px auto; /* Centraliza a tabela */
             border-radius: 8px; /* Cantos arredondados */
             overflow: hidden; /* Para bordas arredondadas */
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra da tabela */
+            box-shadow: 0 4px 20px #e1e1e6; /* Sombra da tabela */
             background-color: transparent; /* Fundo da tabela */
             }
             table {
@@ -444,17 +444,18 @@
             }
             th {
                 background-color: #00b4d8; /* Cabeçalho azul */
-                color: white; /* Texto branco no cabeçalho */
+                color: #000000; /* Texto branco no cabeçalho */
             }
             tr:hover {
-                background-color: #3a3a3a; /* Realce na linha ao passar o mouse */
+                background-color: #00b4d8;
+                opacity: 75% /* Realce na linha ao passar o mouse */
             }
 
             .tit-cad{
                 font-size: 2.5rem;
                 margin-bottom: 1.5rem;
                 color: var(--highlight-color);
-                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+                text-shadow: 1px 1px 2px #e1e1e6;
             }
 
             /* Containers dos inputs */
@@ -506,7 +507,7 @@
             /* Botão */
             .btn-cad {
                 background-color: #00b4d8;
-                color: #fff;
+                color: #000000;
                 border: none;
                 padding: 12px 20px;
                 border-radius: 8px;
@@ -540,14 +541,14 @@
             .card {
                 background-color: transparent;
                 border-radius: 12px;
-                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+                box-shadow: 0 4px 20px #e1e1e6;
                 transition: transform 0.3s ease, box-shadow 0.3s ease;
             }
 
             /* Efeito hover no card */
             .card:hover {
                 transform: translateY(-5px);
-                box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+                box-shadow: 0 8px 25px #e1e1e6;
             }
 
             /* Conteúdo interno */
@@ -565,7 +566,7 @@
 
             /* Texto */
             .card-text {
-                color: white;
+                color: #000000;
                 margin-bottom: 15px;
                 font-size: 15px;
                 line-height: 1.4;
@@ -576,7 +577,7 @@
                 display: inline-block;
                 text-decoration: none;
                 background-color: #00b4d8;
-                color: #fff;
+                color: #000000;
                 padding: 10px 18px;
                 border-radius: 8px;
                 font-size: 15px;
@@ -588,7 +589,7 @@
             .btn:hover {
                 background-color: #00b4d8;
                 opacity: 80%;
-                color: white
+                color: #000000
             }
     </style>
 </head>
@@ -598,7 +599,7 @@
             <div class="header-container">
                 <div class="logo">
                     <i class="fas fa-feather-alt"></i>
-                    Clínica Cisne
+                    Agende Bem
                 </div>
                 <nav>
                     <ul>
@@ -650,7 +651,7 @@
             <div class="footer-content">
                 <div class="footer-logo">
                     <i class="fas fa-feather-alt"></i>
-                    <span><a href="{{ route('home') }}" style="color: var(--highlight-color); text-decoration: none;">Clínica Cisne</a></span>
+                    <span><a href="{{ route('home') }}" style="color: var(--highlight-color); text-decoration: none;">Agende Bem</a></span>
                 </div>
                 <div class="social-links">
                     <a href="#"><i class="fab fa-facebook"></i></a>
@@ -658,7 +659,7 @@
                     <a href="#"><i class="fab fa-instagram"></i></a>
                     <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
-                <p>&copy; {{ date('Y') }} Clínica Cisne. Todos os direitos reservados.</p>
+                <p>&copy; {{ date('Y') }} Agende Bem. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>

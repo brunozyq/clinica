@@ -24,14 +24,14 @@
 form h2 {
     text-align: center;
     margin-bottom: 1.5rem;
-    color: white;
+    color: #000000;
 }
 
 form label {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: bold;
-    color: white;
+    color: #000000;
 }
 
 form input[type="email"],
@@ -50,7 +50,7 @@ form button {
     padding: 0.8rem;
     background-color: #00b4d8;
     border: none;
-    color: white;
+    color: #000000;
     font-weight: bold;
     border-radius: 8px;
     cursor: pointer;
