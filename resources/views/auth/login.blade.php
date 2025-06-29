@@ -18,20 +18,20 @@
     border: 1px solid transparent;
     border-radius: 12px;
     background-color: transparent;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px #ccc;
 }
 
 form h2 {
     text-align: center;
     margin-bottom: 1.5rem;
-    color: white;
+    color: black;
 }
 
 form label {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: bold;
-    color: white;
+    color: black;
 }
 
 form input[type="email"],
@@ -50,7 +50,7 @@ form button {
     padding: 0.8rem;
     background-color: #00b4d8;
     border: none;
-    color: white;
+    color: black;
     font-weight: bold;
     border-radius: 8px;
     cursor: pointer;

@@ -1,14 +1,14 @@
 @extends('layouts.app')
 
-@section('title', 'Bem-vindo à Clínica Cisne')
+@section('title', 'Bem-vindo à Agende Bem')
 
 @section('content')
 <div class="hero-section">
     <div class="hero-content">
         <div class="hero-text fade-in">
-            <h1>Bem-vindo à Clínica Cisne</h1>
+            <h1>Bem-vindo à Agende Bem</h1>
             <p class="lead">Sua saúde com a elegância e precisão de um cisne. Cuidados médicos de alta qualidade para sua família.</p>
-            <p class="mt-4">Na Clínica Cisne, combinamos a tecnologia mais avançada com a atenção humana para oferecer o melhor atendimento médico.</p>
+            <p class="mt-4">Na Agende Bem, combinamos a tecnologia mais avançada com a atenção humana para oferecer o melhor atendimento médico.</p>
             @guest
                 <a href="{{ route('login') }}" class="btn-custom mt-3"><i class="fas fa-sign-in-alt"></i> Entrar no Sistema</a>
             @else
@@ -22,7 +22,7 @@
 
 <div class="container">
     <div class="section-title fade-in">
-        <h2>Por que escolher a Clínica Cisne</h2>
+        <h2>Por que escolher a Agende Bem</h2>
     </div>
     
     <div class="feature-cards">
@@ -52,11 +52,11 @@
             </div>
             <div class="contact-item">
                 <i class="fas fa-phone"></i>
-                <span>(11) 1234-5678</span>
+                <span>(27) 1234-5678</span>
             </div>
             <div class="contact-item">
                 <i class="fas fa-envelope"></i>
-                <span>contato@clinica-cisne.com.br</span>
+                <span>contato@agende-bem.com.br</span>
             </div>
             <div class="contact-item">
                 <i class="fas fa-clock"></i>
