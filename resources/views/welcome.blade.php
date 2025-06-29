@@ -15,7 +15,7 @@
             @endguest
         </div>
         <div class="hero-image fade-in">
-            <img src="{{ asset('images/medica.png') }}" alt="Doutora na Clínica Cisne" />
+            <img src="{{ asset('images/medica.png') }}" alt="Doutora na Agende Bem" />
         </div>
     </div>
 </div>
@@ -56,7 +56,7 @@
             </div>
             <div class="contact-item">
                 <i class="fas fa-envelope"></i>
-                <span>contato@agende-bem.com.br</span>
+                <span>contato@agendebem.com.br</span>
             </div>
             <div class="contact-item">
                 <i class="fas fa-clock"></i>
